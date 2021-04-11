@@ -1,0 +1,13 @@
+Installation did not succeed.
+The application could not be installed: INSTALL_FAILED_OLDER_SDK
+
+List of apks:
+[0] 'C:\Users\USER\AndroidStudioProjects\covid19-be2637cc441211bf64ebf6008765c19f7f6c18ad\app\build\outputs\apk\debug\app-debug.apk'
+The application's minSdkVersion is newer than the device API level.
+
+라는 오류가 떴다
+구글ㄹ링을 해보니 그저 간단한 오류였다
+
+자신의 에뮬레이터의 api 버전을 확인한 후
+그 버전에 맞게 build.gradle(module; Covid.app)에서 minSdkVersion에서 버젼 값을
+바꿔주면 된다
